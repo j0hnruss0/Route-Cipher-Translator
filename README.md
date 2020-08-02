@@ -28,3 +28,6 @@ Additionally, if a given uncoded message has words found in the code_list, the v
 of those key words will be put in the encoded message for additionaly secrecy. Conversely,
 when decoding a message, words swapped with coded words will be converted back to the
 intended word in the original message
+
+## TBA: 
+    - Additional, more complicated dummy and code-swapped words
