@@ -141,8 +141,10 @@ def key_convert(key, COLS):
     key_int = [int(i) for i in key.split()]
     key_low = min(key_int)
     key_high = max(key_int)
-    if len(key_int) != COLS or key_low < -COLS or key_high > COLS \
-        or 0 in key_int:
+    if (len(key_int) != COLS or 
+        key_low < -COLS or 
+        key_high > COLS or 
+        0 in key_int):
         print("ERROR: Problem with given key. Terminating...", file=sys.stderr)
         sys.exit(1)
     else:
