@@ -194,8 +194,7 @@ def decrypt(translation_matrix, ROWS, dummy_list):
     
     plaintext = ''
 
-    for i in range(ROWS):
-        i # intentinally left empty so as to not trigger pylint
+    for all in range(ROWS):
         for matrix_col in translation_matrix:
             word = str(matrix_col.pop())
             if word not in dummy_list:
